@@ -1,0 +1,12 @@
+appId: xyz.blueskyweb.app
+name: Search and Scroll
+---
+- launchApp
+
+- tapOn: Search
+- tapOn: Search for posts, users, or feeds
+- inputText: maestro.dev
+- pressKey: Enter
+
+- scrollUntilVisible:
+    element: Maestro Studio Beta
