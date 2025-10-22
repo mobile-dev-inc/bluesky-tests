@@ -1,0 +1,6 @@
+appId: xyz.blueskyweb.app
+---
+- pressKey: home
+- swipe:
+    direction: UP
+- tapOn: Bluesky
