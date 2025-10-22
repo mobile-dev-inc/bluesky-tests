@@ -1,0 +1,6 @@
+appId: xyz.blueskyweb.app
+---
+- launchApp
+
+- tapOn: Notifications
+- assertVisible: No notifications yet!
