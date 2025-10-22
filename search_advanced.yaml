@@ -9,4 +9,4 @@ name: Search and Scroll
 - pressKey: Enter
 
 - scrollUntilVisible:
-    element: Maestro Studio Beta
+    element: .*Maestro Studio Beta.*
