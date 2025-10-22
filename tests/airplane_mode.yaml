@@ -1,0 +1,13 @@
+appId: xyz.blueskyweb.app
+name: Check behaviour with no connectivity
+onFlowStart:
+  - setAirplaneMode: enabled
+onFlowComplete:
+  - setAirplaneMode: disabled
+---
+- launchApp:
+    clearState: true
+- tapOn: Sign in
+
+- assertVisible: Connecting...
+- assertNotVisible: Next # Login button has been replaced with Connecting
