@@ -1,0 +1,10 @@
+appId: xyz.blueskyweb.app
+---
+- launchApp:
+    clearState: true
+
+- tapOn: Sign in
+- inputText: demo-test-1015a
+- tapOn: Password
+- inputText: rycm-w6w6-x5gr-eisr
+- tapOn: Next
