@@ -1,0 +1,1 @@
+output.platform = faker.videoGame().platform()

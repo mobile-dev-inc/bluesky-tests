@@ -1,10 +1,11 @@
 appId: xyz.blueskyweb.app
 ---
 - launchApp
+- runScript: gamePlatform.js
 
 # Post a thing
 - tapOn: New post
-- inputText: I preferred the ${faker.videoGame().platform()} version
+- inputText: I preferred the ${output.platform} version
 - tapOn: Publish post
 - assertVisible: Your post was sent
 - assertNotVisible: Your post was sent
@@ -12,7 +13,7 @@ appId: xyz.blueskyweb.app
 # Check a thing
 - tapOn: Open drawer menu
 - tapOn: demo-test-1015a.bsky.social
-- assertVisible: I preferred the.*
+- assertVisible: I preferred the ${output.platform} version
 
 # Delete a thing
 - tapOn: Open post options menu
