@@ -1,0 +1,20 @@
+appId: xyz.blueskyweb.app
+---
+- launchApp
+
+# Post a thing
+- tapOn: New post
+- inputText: Hello world
+- tapOn: Publish post
+- assertVisible: Your post was sent
+
+# Check a thing
+- tapOn: Open drawer menu
+- tapOn: demo-test-1015a.bsky.social
+- assertVisible: Hello world
+
+# Delete a thing
+- tapOn: Open post options menu
+- tapOn: Delete post
+- tapOn: Delete
+- assertNotVisible: Hello world
