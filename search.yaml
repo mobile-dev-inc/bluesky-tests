@@ -1,0 +1,10 @@
+appId: xyz.blueskyweb.app
+---
+- launchApp
+
+- tapOn: Search
+- tapOn: Search for posts, users, or feeds
+- inputText: RNR 341
+- pressKey: Enter
+
+- assertVisible: Infinite Red's avatar
