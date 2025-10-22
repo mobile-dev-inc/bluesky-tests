@@ -1,4 +1,5 @@
 appId: xyz.blueskyweb.app
+name: Check Notifications Empty
 onFlowStart:
   - runFlow: ../partials/login.yaml
 ---

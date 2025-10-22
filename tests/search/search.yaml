@@ -1,4 +1,5 @@
 appId: xyz.blueskyweb.app
+name: Search for a specific message
 onFlowStart:
   - runFlow: ../../partials/login.yaml
 ---

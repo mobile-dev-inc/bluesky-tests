@@ -1,4 +1,5 @@
 appId: xyz.blueskyweb.app
+name: Create a Post
 onFlowStart:
   - runFlow: ../partials/login.yaml
   - runScript: ../scripts/gamePlatform.js

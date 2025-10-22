@@ -1,4 +1,5 @@
 appId: xyz.blueskyweb.app
+name: Check Drawer Menu Elements
 onFlowStart:
   - runFlow: ../partials/login.yaml
 ---

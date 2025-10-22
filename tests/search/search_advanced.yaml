@@ -1,5 +1,5 @@
 appId: xyz.blueskyweb.app
-name: Search and Scroll
+name: Search and Scroll for message text
 onFlowStart:
   - runFlow: ../../partials/login.yaml
 ---
