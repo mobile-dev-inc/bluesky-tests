@@ -1,6 +1,9 @@
 appId: xyz.blueskyweb.app
 name: Launch via Home Screen
 ---
+- launchApp
+- stopApp
+
 - pressKey: home
 - swipe:
     direction: UP
