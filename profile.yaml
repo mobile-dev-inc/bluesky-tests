@@ -7,6 +7,8 @@ appId: xyz.blueskyweb.app
 
 - assertVisible: demo-test.*
 
-- assertVisible: Chat
-- assertVisible: Notifications
-- assertVisible: Feeds
+- assertVisible: 
+    text: Chat
+    above: 
+      text: Notifications
+      above: Feeds
