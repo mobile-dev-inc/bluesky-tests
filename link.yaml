@@ -1,0 +1,10 @@
+appId: xyz.blueskyweb.app
+---
+- launchApp
+- assertVisible: Discover
+- stopApp
+
+- openLink: https://bsky.app/profile/infinite.red/post/3lwz2wosbvk2o
+- assertVisible: Infinite Red's avatar
+- assertVisible: .*RNR 341.*
+
