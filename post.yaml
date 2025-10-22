@@ -7,6 +7,7 @@ appId: xyz.blueskyweb.app
 - inputText: Hello world
 - tapOn: Publish post
 - assertVisible: Your post was sent
+- assertNotVisible: Your post was sent
 
 # Check a thing
 - tapOn: Open drawer menu
