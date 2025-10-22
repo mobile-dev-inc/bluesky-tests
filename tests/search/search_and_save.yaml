@@ -1,0 +1,27 @@
+appId: xyz.blueskyweb.app
+name: Search for a specific message and save it
+onFlowStart:
+  - runFlow: ../../partials/login.yaml
+---
+
+# Find a post
+- tapOn: Search
+- tapOn: Search for posts, users, or feeds
+- inputText: RNR 341
+- pressKey: Enter
+
+- assertVisible: Infinite Red's avatar
+
+# Save post
+- copyTextFrom:
+    id: postText
+- tapOn: Add to saved posts
+- assertVisible: Post saved
+- launchApp
+- tapOn: Open drawer menu
+- tapOn: Saved
+- assertVisible: ${maestro.copiedText}
+
+# Tidy up
+- tapOn: Remove from saved posts
+- assertVisible: Removed from saved posts
