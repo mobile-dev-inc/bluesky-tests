@@ -1,0 +1,12 @@
+appId: xyz.blueskyweb.app
+---
+
+- launchApp
+
+- tapOn: Open drawer menu
+
+- assertVisible: demo-test.*
+
+- assertVisible: Chat
+- assertVisible: Notifications
+- assertVisible: Feeds
