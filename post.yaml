@@ -4,7 +4,7 @@ appId: xyz.blueskyweb.app
 
 # Post a thing
 - tapOn: New post
-- inputText: Hello world
+- inputText: I preferred the ${faker.videoGame().platform()} version
 - tapOn: Publish post
 - assertVisible: Your post was sent
 - assertNotVisible: Your post was sent
@@ -12,10 +12,10 @@ appId: xyz.blueskyweb.app
 # Check a thing
 - tapOn: Open drawer menu
 - tapOn: demo-test-1015a.bsky.social
-- assertVisible: Hello world
+- assertVisible: I preferred the.*
 
 # Delete a thing
 - tapOn: Open post options menu
 - tapOn: Delete post
 - tapOn: Delete
-- assertNotVisible: Hello world
+- assertNotVisible: I preferred the.*
