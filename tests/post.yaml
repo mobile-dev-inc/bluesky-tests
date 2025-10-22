@@ -1,7 +1,8 @@
 appId: xyz.blueskyweb.app
+onFlowStart:
+  - runFlow: ../partials/login.yaml
+  - runScript: ../scripts/gamePlatform.js
 ---
-- launchApp
-- runScript: gamePlatform.js
 
 # Post a thing
 - tapOn: New post

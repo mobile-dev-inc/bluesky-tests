@@ -1,8 +1,8 @@
 appId: xyz.blueskyweb.app
 name: Search and Scroll
+onFlowStart:
+  - runFlow: ../../partials/login.yaml
 ---
-- launchApp
-
 - tapOn: Search
 - tapOn: Search for posts, users, or feeds
 - inputText: maestro.dev

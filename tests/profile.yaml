@@ -1,7 +1,7 @@
 appId: xyz.blueskyweb.app
+onFlowStart:
+  - runFlow: ../partials/login.yaml
 ---
-
-- launchApp
 
 - tapOn: Open drawer menu
 

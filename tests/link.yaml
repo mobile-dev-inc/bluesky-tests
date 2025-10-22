@@ -1,6 +1,7 @@
 appId: xyz.blueskyweb.app
+onFlowStart:
+  - runFlow: ../partials/login.yaml
 ---
-- launchApp
 - assertVisible: Discover
 - stopApp
 
